@@ -1,0 +1,69 @@
+.container {
+  display: grid;
+  grid-template-columns: min-content 33% 1fr 1fr 1fr;
+  grid-template-rows: min-content, 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "avatar name name name expandBtn"
+    "avatar content content . ."
+    ". content content . .";
+  padding: 16px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.avatar {
+  grid-area: avatar;
+  justify-self: center;
+  align-self: start;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  width: 84px;
+  height: 84px;
+  margin-top: 12px;
+  margin-right: 6px;
+}
+.name {
+  grid-area: name;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "Droid Sans", sans-serif;
+}
+.content {
+  grid-area: content;
+  margin-left: 6px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: small;
+}
+.expandBtn {
+  grid-area: expandBtn;
+  justify-self: end;
+  height: 24px;
+  width: 24px;
+}
+
+.tagSubmit {
+  display: hidden;
+}
+
+.extendedContent {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    text-align: center;
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: min-content, min-content, 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      ". avatar expandBtn"
+      ". name ."
+      ". content ."
+      ".  content .";
+    padding: 16px;
+    border-bottom: 1px solid lightgrey;
+  }
+}

@@ -2,7 +2,7 @@
 
 ## About
 
-The goal of this assessment is to replicate the frontend application as given in the assessment test by hatchways. The assessment was completed in 1325 minutes due to the impact of the current COVID-19 pandemic (I’m currently working part time and I intend to quit my part time job as soon as I get another job).
+The goal of this assessment is to replicate the frontend student application. The assessment was completed in 1325 minutes. 
 
 To run this App on your machine, kindly download the uploaded files then:
 
